@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import FilterableProductTable from "./components/FilterableProductTable";
+import FilterableProductTableNew from "./components/FilterableProductTableNew";
 
 const PRODUCTS = [
     {category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football'},
@@ -15,7 +16,11 @@ const PRODUCTS = [
 function App() {
     return (
         <div className="App">
+            <h1>Class Implemention</h1>
             <FilterableProductTable products={PRODUCTS}/>
+            <hr/>
+            <h1>Function Implementation</h1>
+            <FilterableProductTableNew products={PRODUCTS} />
         </div>
     );
 }
